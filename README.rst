@@ -39,11 +39,16 @@ Windows user might wanna try:
 
     py -3 -m stuff2str ...
 
-The variable will get expanded to something looking like this:
+If our referenced file is looking like this ...
 
 ::
-    ...
+
+    this is
+    my swamp
+
+... than, the variable will get expanded to something looking like this:
+
+::
     ["this is",
     "my swamp"
     ].join("\n")
-    ...
