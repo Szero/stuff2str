@@ -1,6 +1,8 @@
 stuff2str
 =========
 Python tool for embedding file contents in JavaScript as strings.
+Usefull for making Greasemonkey scripts when we want to use variables
+containing inline CSS or HTML in our script.
 
 Installation
 ------------
