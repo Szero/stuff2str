@@ -1,6 +1,6 @@
 stuff2str
 =========
-Python tool for embedding file contents in JavaScript as strings.
+Python tool for embedding file contents in JavaScript as human-readable strings.
 Usefull for making Greasemonkey scripts when we want to use variables
 containing inline CSS or HTML in our script.
 
@@ -49,6 +49,7 @@ If our referenced file is looking like this ...
 ... than, the variable will get expanded to something looking like this:
 
 ::
+
     ["this is",
     "my swamp"
     ].join("\n")
