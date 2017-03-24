@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 import argparse
 import re
@@ -72,5 +72,7 @@ def main():
 
     with open(args.output,"w") as f:
         f.writelines(data)
+
+    print("Finalized without hickups.")
 
     return 0

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 """Szero's tool for turning files into JavaScript embeddably string."""
 
 import sys

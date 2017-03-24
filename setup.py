@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """Setting it all up like a real human bean"""
 
 from setuptools import setup
@@ -9,7 +10,6 @@ def version():
     """Thanks python!"""
     with open("stuff2str/_version.py") as filep:
         return re.search('__version__ = "(.+?)"', filep.read()).group(1)
-
 
 setup(
     name="stuff2str",
@@ -29,8 +29,10 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Natural Language :: English",
         "Operating System :: OS Independent",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3.4",
-        "Programming Language :: Python :: 3 :: Only",
+        "Programming Language :: Python :: 3",
         "Topic :: Utilities :: Build_Systems",
         "Topic :: JavaScript"
     ],
