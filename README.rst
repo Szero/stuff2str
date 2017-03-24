@@ -10,10 +10,20 @@ Use pip my dude.
 
 ::
 
+    pip install https://github.com/Szero/stuff2str/archive/master.zip
+OR
+
+::
+
     pip3 install https://github.com/Szero/stuff2str/archive/master.zip
 
+Windows user might wanna try, after installing python 2 or 3 that is:
 
-Windows user might wanna try, after installing python3 that is:
+::
+
+    py -2 -m pip install https://github.com/Szero/stuff2str/archive/master.zip
+
+OR
 
 ::
 
@@ -34,6 +44,12 @@ After that, use one of the commands listed below:
 
 
 Windows user might wanna try:
+
+::
+
+    py -2 -m stuff2str ...
+
+OR
 
 ::
 
