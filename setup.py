@@ -2,9 +2,9 @@
 
 """Setting it all up like a real human bean"""
 
-from setuptools import setup
-
 import re
+
+from setuptools import setup
 
 def version():
     """Thanks python!"""

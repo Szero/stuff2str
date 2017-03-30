@@ -1,4 +1,4 @@
-"""Szero's tool for turning files into JavaScript embeddably string."""
+"""Szero's tool for turning files into JavaScript embeddable string."""
 
 import sys
 
