@@ -11,9 +11,10 @@ def parse_args():
     """Argparser for command line input"""
 
     parser = argparse.ArgumentParser(
-            description="Utility for turning files into JavaScript-embeddable strings.",
-            epilog=("Before using the program you have to insert ""stuff2str(\"/path/to/file\") tag into your INFILE.")
-    )
+        description="Utility for turning files into JavaScript-embeddable strings.",
+        epilog=("Before using the program you have to insert ""stuff2str(\"/path/to/file\") "
+                "tag into your INFILE.")
+        )
     parser.add_argument('-o', '--ow', dest='ow', action="store_true", help="overwrites input file")
     parser.add_argument("input", metavar='INFILE', type=str, help="input file")
     parser.add_argument("output", metavar='OUTFILE', nargs="?", type=str, help="output file")
@@ -65,11 +66,9 @@ def main():
                     if not line.isspace():
                         raw_css.append(re.sub("[\"\']", "\\\"", line))
             css_list = []
-            for line in raw_css:
-                if not line == raw_css[-1]:
-                    css_list.append(padding*2+'"'+line.rstrip("\n")+' ",\n')
-                else:
-                    css_list.append(padding*2+'"'+line.rstrip("\n")+' "\n')
+            for line in raw_css[0:-1]:
+                css_list.append(padding*2+'"'+line.rstrip("\n")+' ",\n')
+            css_list.append(padding*2+'"'+raw_css[-1].rstrip("\n")+' "\n')
             if not all(c.isspace() for c in near_end):
                 css_list.append(padding+'].join("\\n")'+near_end+"\n")
             else:
