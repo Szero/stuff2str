@@ -20,6 +20,7 @@ setup(
     license="MIT",
     author="Szero",
     author_email="singleton@tfwno.gf",
+    packages=["stuff2str"],
     entry_points={"console_scripts": ["stuff2str = stuff2str.__main__:run"]},
     classifiers=[
         "Environment :: Console",
