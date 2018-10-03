@@ -31,7 +31,7 @@ OR
 
 Usage
 -----
-Firstly, insert :code:`str2string("/path/to/file")` variable into your JavaScript file.
+Firstly, insert :code:`stuff2str("/path/to/file")` variable into your JavaScript file.
 
 After that, use one of the commands listed below:
 

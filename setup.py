@@ -6,14 +6,14 @@ import re
 
 from setuptools import setup
 
-def version():
+def version(filename):
     """Thanks python!"""
-    with open("stuff2str/_version.py") as filep:
+    with open(filename) as filep:
         return re.search('__version__ = "(.+?)"', filep.read()).group(1)
 
 setup(
     name="stuff2str",
-    version=version(),
+    version=version("stuff2str/_version.py"),
     description="Convert files into JavaScript-embeddable strings",
     long_description=open("README.rst").read(),
     url="https://github.com/Szero/stuff2str",
@@ -23,7 +23,6 @@ setup(
     packages=['stuff2str'],
     entry_points={"console_scripts": ["stuff2str = stuff2str.__main__:run"]},
     classifiers=[
-        "Development Status :: 0.1 - Beta",
         "Environment :: Console",
         "Intended Audience :: Developers/Desktop",
         "License :: OSI Approved :: MIT License",

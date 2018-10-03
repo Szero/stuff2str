@@ -2,7 +2,7 @@
 
 import sys
 
-from stuff2str import main
+from .stuff2str import main
 
 def run():
     """ Run as CLI command """
